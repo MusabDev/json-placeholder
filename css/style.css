@@ -1,0 +1,261 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'
+);
+
+:root {
+    --primary-color: #0a9396;
+    --heading-color: #022122;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.highlight {
+    color: #0a9396;
+    font-weight: 800;
+}
+
+/* Button css */
+.my-btn {
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    background: var(--primary-color);
+    color: white !important;
+    text-decoration: none;
+    padding: .7rem 2rem;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: .3s;
+}
+
+.my-btn:hover,
+.my-btn:focus {
+    box-shadow: 0 13px 34px -6px var(--primary-color);
+}
+
+.my-btn-sm {
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    border-radius: 2px;
+    opacity: 0.9;
+}
+
+.my-btn-sm:hover,
+.my-btn-sm:focus {
+    box-shadow: none;
+    opacity: 1;
+}
+
+/* Section css */
+.section {
+    padding: 100px 0;
+}
+
+.section-head {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.section-desc {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Material icons css */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* Code div css */
+.code {
+    background: #2d2d2d;
+    border-radius: 5px;
+    padding: 2rem;
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+.code pre {
+    margin: 0;
+}
+
+.code .function {
+    color: #f08d49;
+}
+
+.code .operators {
+    color: #67cdcc;
+}
+
+.code .string {
+    color: #7ec699;
+}
+
+/* Navbar css */
+.navbar .navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .nav-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar .nav-links ul li {
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.navbar .nav-links ul li a {
+    text-decoration: none;
+    color: var(--heading-color);
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navbar .nav-links ul li a:hover,
+.navbar .nav-links ul li a:focus,
+.navbar .nav-links ul li a.active {
+    color: var(--primary-color);
+}
+
+/* Hero section css */
+.hero-section {
+    background: white;
+    min-height: 600px;
+    padding: 100px 0;
+    display: grid;
+    place-items: center;
+}
+
+.hero-section .content {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-section .title {
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+
+.hero-section .desc {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: #666;
+}
+
+/* Footer css */
+footer .footer-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+footer .footer-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: .3s;
+}
+
+footer .footer-text a:hover,
+footer .footer-text a:focus {
+    text-decoration: underline;
+}
+
+/* Back to top button css */
+.backToTop {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    right: 1rem;
+    bottom: -40px;
+    display: grid;
+    place-items: center;
+    background: white;
+    transition: .3s;
+}
+
+.backToTop.showTopBtn {
+    bottom: 1rem;
+}
+
+.backToTop:hover {
+    background: var(--primary-color);
+}
+
+.backToTop span {
+    font-size: 1.3rem;
+    color: var(--heading-color);
+    font-weight: 400;
+    transition: .3s;
+}
+
+.backToTop:hover span {
+    color: white;
+}
+
+/* Media queries css */
+@media (max-width: 520px) {
+    /* Hero section css */
+    .hero-section .title {
+        font-size: 2.5rem;
+    }
+}
