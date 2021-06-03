@@ -1,4 +1,4 @@
-<?php define("BASE_URL", "https://jsonplaceholderdev.herokuapp.com/");  # Replace this to url website url ?>
+<?php define("BASE_URL", "http://127.0.0.1/json-placeholder/");  # Replace this to url website url ?>
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 <head>
@@ -62,6 +62,7 @@
           <div class="col-md-8 mx-auto">
             <div class="code">
               <pre><span class="function">fetch</span>(<span class="string">'<?php echo BASE_URL . "json/1"; ?>'</span>)
+<span class="string">// fetch('<?php echo BASE_URL . "json"; ?>')</span>
   .<span class="function">then</span>(response <span class="operators">=></span> response.<span class="function">json</span>())
   .<span class="function">then</span>(json <span class="operators">=></span> console.<span class="function">log</span>(json))</pre>
             </div>
