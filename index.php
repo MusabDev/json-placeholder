@@ -1,10 +1,21 @@
 <?php define("BASE_URL", "https://jsonplaceholderdev.herokuapp.com/");  # Replace this to url website url ?>
 <!DOCTYPE html>
+<!--
+  This site created by Pure Coding
+  ===============================================
+  Website: https://akhfasoft.net/
+  YouTube: https://youtube.com/PureCoding
+  GitHub: https://github.com/MusabDev
+  Twitter: https://twitter.com/CodingPure
+  Discord: https://discord.com/invite/U3hhb6Q9De
+  ===============================================
+-->
 <html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pure Coding">
 
     <!-- Primary Meta Tags -->
     <title>JSON Placeholder — Free Fake REST API</title>
