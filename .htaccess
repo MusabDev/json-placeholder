@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteRule ^json/([a-zA-Z0-9-/]+)$ json.php?limit=$1
+RewriteRule ^json/([a-zA-Z-0-9-]+)/ json.php?limit=$1
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
