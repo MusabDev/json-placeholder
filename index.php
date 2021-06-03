@@ -1,4 +1,4 @@
-<?php define("BASE_URL", "http://127.0.0.1/json-placeholder/");  # Replace this to url website url ?>
+<?php define("BASE_URL", "https://jsonplaceholderdev.herokuapp.com/");  # Replace this to url website url ?>
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 <head>
