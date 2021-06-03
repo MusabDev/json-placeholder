@@ -1,4 +1,4 @@
-<?php define("BASE_URL", "http://127.0.0.1/json-placeholder/");  # Replace this to url website url ?>
+<?php define("BASE_URL", "https://jsonplaceholderdev.herokuapp.com/");  # Replace this to url website url ?>
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 <head>
@@ -6,18 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Primary Meta Tags -->
+    <title>JSON Placeholder — Free Fake REST API</title>
+    <meta name="title" content="JSON Placeholder — Free Fake REST API">
+    <meta name="description" content="In this site your can generate fake json apis. Free fake API for testing and prototyping.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo BASE_URL; ?>">
+    <meta property="og:title" content="JSON Placeholder — Free Fake REST API">
+    <meta property="og:description" content="In this site your can generate fake json apis. Free fake API for testing and prototyping.">
+    <meta property="og:image" content="<?php echo BASE_URL; ?>images/website.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<?php echo BASE_URL; ?>">
+    <meta property="twitter:title" content="JSON Placeholder — Free Fake REST API">
+    <meta property="twitter:description" content="In this site your can generate fake json apis. Free fake API for testing and prototyping.">
+    <meta property="twitter:image" content="<?php echo BASE_URL; ?>images/website.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Bootstrap.min.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <!-- Style.css -->
     <link rel="stylesheet" href="css/style.css">
-    <title>JSON Placeholder — Free Fake REST API</title>
 </head>
 <body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
       <div class="container">
-        <a class="navbar-brand" href="index">JSONPlaceholder</a>
+        <a class="navbar-brand d-flex align-items-center" href="index">
+          <!-- <img src="images/favicon_30x30.png" width="30px" height="30px" class="me-1 d-block"> -->
+          {JSON} Placeholder
+        </a>
         <div class="nav-links">
           <ul>
             <li>
